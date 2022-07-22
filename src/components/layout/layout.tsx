@@ -4,14 +4,9 @@ import Navbar from "./navbar";
 import Footer from "./footer";
 
 export const Layout: React.FC<{ children?: JSX.Element }> = (props) => {
-  const meta = {
-    title: "Nicolas Southern - Design, Develop, Distribute",
-    description: `Software Engineer, Systems Engineer, Project & Operations Manager`,
-    type: "website",
-  };
   return (
     <>
-      <main className="">
+      <main>
         <Navbar />
         <>{props.children}</>
         <Footer />
